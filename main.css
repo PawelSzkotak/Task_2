@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto; 
+    padding: 8px;
+    background-color: rgb(255, 234, 231);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section {
+    min-width: 300px;
+    margin: 8px;
+    padding: .5rem;
+    border: 2px solid;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+.section:nth-child(odd) {
+    background-color: rgb(252, 237, 220);
+    border-color: rgb(221, 168, 146);
+}
+
+.section:nth-child(even) {
+    background-color: rgb(227, 246, 255);
+    border-color: rgb(99, 127, 179);
+}
